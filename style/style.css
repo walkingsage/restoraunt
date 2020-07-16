@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'bannybold_round';
+  src: url("banny-boldround-webfont.woff2") format("woff2"), url("banny-boldround-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+* {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  width: 89.1666666667%;
+  max-width: 87%;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin: 0 auto; }
+
+header {
+  background-image: url(../img/header-bgheadbg-min.jpg);
+  background-size: cover;
+  height: 100vh; }
+  header .container .header__content {
+    display: grid;
+    grid-template-rows: 21.875% 19.125% 41.5%;
+    grid-row-gap: 18.875% 3.75%; }
+    header .container .header__content nav {
+      display: grid;
+      grid-template-columns: repeat(41.4330218069%, 4) 11.6822429907% repeat(41.4330218069%, 4);
+      grid-column-gap: 2.7258566978%; }
+
+/*# sourceMappingURL=style.css.map */

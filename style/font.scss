@@ -1,0 +1,35 @@
+@mixin sans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+@font-face {
+    font-family: 'bannybold_round';
+    src: url('banny-boldround-webfont.woff2') format('woff2'),
+         url('banny-boldround-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin banny {
+    font-family: 'bannybold_round';
+    src: url('banny-boldround-webfont.woff2') format('woff2'),
+         url('banny-boldround-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin light {
+    font-weight: 300;
+}
+
+@mixin regular {
+    font-weight: 400;
+}
+
+@mixin bold {
+    font-weight: 700;
+}
+
+@mixin exbold {
+    font-weight: 800;
+}
