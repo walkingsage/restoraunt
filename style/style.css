@@ -303,8 +303,41 @@ body {
             position: absolute;
             align-self: center;
             justify-self: start; }
-        body main .our__team .container .our__team__content .text {
+        body main .our__team .container .our__team__content .textr {
+          align-self: center;
           display: grid;
-          grid-template-rows: 56px 5px 80px 100px; }
+          grid-template-rows: 56px 5px 80px 100px;
+          grid-template-columns: 100%;
+          grid-row-gap: 30px; }
+          body main .our__team .container .our__team__content .textr h1 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            font-size: 38px;
+            text-transform: uppercase; }
+          body main .our__team .container .our__team__content .textr p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 18px;
+            text-align: center; }
+          body main .our__team .container .our__team__content .textr .bold {
+            grid-area: 3/1/4/2; }
+          body main .our__team .container .our__team__content .textr .r {
+            grid-area: 4/1/5/2; }
+    body main .book__a__table {
+      background: #ffffff; }
+      body main .book__a__table .container .book__content {
+        display: grid;
+        margin-top: 100px;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 475px 100px; }
+        body main .book__a__table .container .book__content .left {
+          display: grid;
+          grid-template-rows: 56px 5px 270px;
+          align-self: center; }
+          body main .book__a__table .container .book__content .left h1 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 38px; }
 
 /*# sourceMappingURL=style.css.map */
