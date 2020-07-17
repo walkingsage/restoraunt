@@ -5,7 +5,7 @@
     padding: 0
     
 .container
-    width: 1284px/1440px*100%
+    width: 1304px/1440px*100%
     padding-left: 10px
     padding-right: 10px
     margin: 0 auto
@@ -302,28 +302,29 @@ body
                             text-align: center
                     
                     .picture
-                            position: relative
-                            display: grid
+                        position: relative
+                        display: grid
 
-                            img
-                                justify-self: center
-                                max-width: 100%
+                        img
+                            justify-self: center
+                            max-width: 100%
 
-                            span
-                                width: 250px
-                                height: 250px
-                                border: 20px solid #E8C300
-                                box-sizing: border-box
-                                background: rgba(0, 0, 0, 0)
-                                box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5)
-                                border-radius: 5px
-                                position: absolute
-                                align-self: center
-                                justify-self: end
+                        span
+                            width: 250px
+                            height: 250px
+                            border: 20px solid #E8C300
+                            box-sizing: border-box
+                            background: rgba(0, 0, 0, 0)
+                            box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5)
+                            border-radius: 5px
+                            position: absolute
+                            align-self: center
+                            justify-self: end
 
         .our__team
             background-image: url(../img/masterbg.jpg)
             background-size: cover
+            background-attachment: fixed
 
             .container
                 .our__team__content
@@ -410,14 +411,314 @@ body
                             text-align: center
                             font-size: 38px
                         
+                        span
+                            width: 10%
+
+                        form
+                            height: 100%
+                            margin-top: 20px
+                            fieldset
+                                border: none
+                                
+                                .elements__form
+                                    display: grid
+                                    justify-items: center
+                                    grid-template-columns: 50% 50%
+                                    grid-template-rows: repeat(4,60px)
+                                    grid-row-gap: 10px
+
+                                    input, select
+                                        box-sizing: border-box
+                                        width: 277px/300px*100%
+                                        background-color: #E5E5E5
+                                        border: none
+                                        border-radius: 5px
+                                        padding-left: 10px
+                                        color: rgba(51, 51, 51, 0.5)
+                                        +sans
+                                        +regular
+                                        font-size: 14px
+
+                                    .submit
+                                        grid-area: 4/1/5/3
+                                        width: 578px/600px*100%
+                                        padding: 0
+                                        text-transform: uppercase
+                                        +bold
+                                    
+                                    .submit:hover
+                                        background-color: #E8C300
+                                        color: #ffffff
+                                        cursor: pointer
+                                        
+                    .right
+                        position: relative
+                        display: grid
+
+                        img
+                            justify-self: center
+                            max-width: 100%
+                            border-radius: 5px
+
+                        span
+                            width: 250px
+                            height: 250px
+                            border: 20px solid #E8C300
+                            box-sizing: border-box
+                            background: rgba(0, 0, 0, 0)
+                            box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5)
+                            border-radius: 5px
+                            position: absolute
+                            align-self: center
+                            justify-self: end
+
+                    .bottom__text
+                        grid-area: 2/1/3/3
+                        text-align: center
+                        align-self: center
+                        +sans
+                        +bold
+                        font-size: 12px
+                        color: rgba(51, 51, 51, 0.5)
+
+        .specialties
+            background-image: url(../img/bgchocolatebg.jpg)
+            background-size: cover
+            background-attachment: fixed
+
+            .container
+                .specialties__content
+                    display: grid
+                    grid-template-rows: 100px 475px
+                    grid-template-columns: 50% 50%
+                    margin-bottom: 100px
+                    color: #ffffff
+                
+                    h1
+                        grid-area: 1/1/2/3
+                        +sans
+                        +bold
+                        text-transform: uppercase
+                        font-size: 14px
+                        letter-spacing: 0.5em
+                        text-align: center
+                        align-self: center
+                    
+                    .picture
+                        grid-area: 2/1/3/2
+                        position: relative
+                        display: grid
+
+                        img
+                            justify-self: center
+                            max-width: 100%
+                            border-radius: 5px
+
+                        span
+                            width: 250px
+                            height: 250px
+                            border: 20px solid #E8C300
+                            box-sizing: border-box
+                            background: rgba(0, 0, 0, 0)
+                            box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5)
+                            border-radius: 5px
+                            position: absolute
+                            align-self: center
+                            justify-self: start
+                    
+                    .textr
+                        align-self: center
+                        display: grid
+                        grid-template-rows: 56px 5px 80px 100px
+                        grid-template-columns: 100%
+                        grid-row-gap: 30px
+
+                        h1 
+                            +sans
+                            +bold
+                            font-size: 38px
+                            text-transform: uppercase
+
+                        span
+                            width: 10%
+
+                        p
+                            +sans
+                            font-size: 18px
+                            text-align: center
+                        
+                        .bold
+                            grid-area: 3/1/4/2
+
+                        .r
+                            grid-area: 4/1/5/2
+        
+        .menu
+            background-color: #ffffff
+
+            .container
+                .menu__content
+                    margin-top: 100px
+                    margin-bottom: 100px
+                    display: grid
+                    grid-template-rows: 137px 50px 462px
+                    grid-row-gap: 50px
+
+                    .top
+                        display: grid
+                        grid-template-rows: 56px 5px 76px
+                        align-items: center
+
+                        h1
+                            +sans
+                            +bold
+                            text-transform: uppercase
+                            text-align: center
+                            font-size: 38px
+                        
+                        span
+                            width: 10%
+
+                        p
+                            max-width: 900px/1284px*100%
+                            +sans
+                            font-size: 18px
+                            text-align: center
+                            justify-self: center
+                    
+                    ul
+                        list-style: none
+                        width: 840px/1284px*100%
+                        justify-self: center
+                        display: grid
+                        grid-template-columns: repeat(7,120px/840px*100%)
+        
+                        li
+                            display: grid
+                            align-items: center
+                            +sans
+                            +bold
+                            font-size: 18px
+                            text-transform: uppercase
+                            text-align: center
+                            border-right: 1px solid rgba(51, 51, 51, 0.2)
+                            color: #333333
+
+                        li:hover
+                            color: #E8C300
+                            cursor: pointer
+                        
+                        li:last-child
+                            border-right: none
+
+                    .menu__positions
+                        display: grid
+                        grid-template-columns: repeat(3,363px/1284px*100%) 
+                        grid-template-rows: repeat(7,66px)
+                        grid-column-gap: 87px/1284px*100%
+
+                        p
+                            +sans
+                            +bold
+                            font-size: 14px
+                            text-transform: uppercase
+                            color: #333333
+
+                        .about__position
+                            color: #999999
+                            font-size: 8px
+                            +regular
+                
+
+        .private__events
+            background-image: url(../img/bgchocolatebg.jpg)
+            background-size: cover
+            background-attachment: fixed
+
+            .container
+                .events__contant
+                    display: grid
+                    grid-template-rows: 100px 475px 100px
+
+                    h1
+                        +sans
+                        +bold
+                        text-transform: uppercase
+                        text-align: center
+                        align-self: center
+                        color: #ffffff
+                        font-size: 12px
+                        letter-spacing: 0.5em
+                    
+                    .events__main
+                        display: grid
+                        grid-template-columns: 50% 50%
+
+                        .left
+                            position: relative
+                            display: grid
+
+                            img
+                                justify-self: center
+                                max-width: 100%
+                                border-radius: 5px
+
+                            span
+                                width: 250px
+                                height: 250px
+                                border: 20px solid #E8C300
+                                box-sizing: border-box
+                                background: rgba(0, 0, 0, 0)
+                                box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5)
+                                border-radius: 5px
+                                position: absolute
+                                align-self: center
+                                justify-self: start
+
+                        .right
+                            display: grid
+                            position: relative
+
+                            img
+                                justify-self: center
+                                max-width: 100%
+                                border-radius: 5px
+
+                            span
+                                width: 250px
+                                height: 250px
+                                border: 20px solid #E8C300
+                                box-sizing: border-box
+                                background: rgba(0, 0, 0, 0)
+                                box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5)
+                                border-radius: 5px
+                                position: absolute
+                                align-self: center
+                                justify-self: end
+
+                    .text__bottom
+                        display: grid
+                        grid-area: 3/1/4/2
+                        
+                        p
+                            +sans
+                            +regular
+                            font-size: 12px
+                            color: rgba(255, 255, 255, 0.5)
+                            text-align: center
+                            align-self: center
                         
 
+
+
+
+                                    
 
                     
 
-                        
+                    
 
 
 
 
-        
+    
