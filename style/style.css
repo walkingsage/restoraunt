@@ -169,17 +169,39 @@ header {
       header .container .lines .goriz {
         display: grid;
         max-width: 100%;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 45% 45%;
+        grid-column-gap: 10%;
         grid-template-rows: 99px 1px; }
         header .container .lines .goriz .line__first {
           grid-area: 2/1/3/2;
           border: 1px solid rgba(255, 255, 255, 0.4);
+          background-color: rgba(255, 255, 255, 0.4);
           width: 99.6240601504%;
           height: 1px; }
         header .container .lines .goriz .line__second {
           grid-area: 2/2/3/3;
           border: 1px solid rgba(255, 255, 255, 0.4);
+          background-color: rgba(255, 255, 255, 0.4);
           width: 99.6240601504%;
           height: 1px; }
+      header .container .lines .vert {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: 80% 20%; }
+        header .container .lines .vert span {
+          border: 1px solid rgba(255, 255, 255, 0.4);
+          width: 99.6240601504%;
+          transform: rotate(90deg);
+          background-color: rgba(255, 255, 255, 0.4);
+          height: 1px; }
+        header .container .lines .vert .line__three {
+          grid-area: 1/1/2/2; }
+        header .container .lines .vert .line__four {
+          grid-area: 1/2/2/3;
+          justify-self: center; }
+        header .container .lines .vert .line__five {
+          grid-area: 1/3/2/4; }
+        header .container .lines .vert .line__six {
+          grid-area: 2/2/3/3; }
 
 /*# sourceMappingURL=style.css.map */

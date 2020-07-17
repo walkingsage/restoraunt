@@ -202,24 +202,51 @@ header
             .goriz
                 display: grid 
                 max-width: 100%
-                grid-template-columns: 50% 50%
+                grid-template-columns: 45% 45%
+                grid-column-gap: 10%
                 grid-template-rows: 99px 1px
 
                 .line__first
                     grid-area: 2/1/3/2
                     border: 1px solid rgba(255, 255, 255, 0.4)
+                    
+                    background-color: rgba(255, 255, 255, 0.4)
                     width: 530px/532px*100%
                     height: 1px
 
                 .line__second
                     grid-area: 2/2/3/3
                     border: 1px solid rgba(255, 255, 255, 0.4)
+                    
+                    background-color: rgba(255, 255, 255, 0.4)
                     width: 530px/532px*100%
                     height: 1px
             
             .vert
                 display: grid
                 grid-template-columns: repeat(4,25%)
+                grid-template-rows: 80% 20%
+
+                span
+                    border: 1px solid rgba(255, 255, 255, 0.4)
+                    width: 530px/532px*100%
+                    transform: rotate(90deg)
+                    background-color: rgba(255, 255, 255, 0.4)
+                    height: 1px
+
+                .line__three
+                    grid-area: 1/1/2/2
+                
+                .line__four
+                    grid-area: 1/2/2/3
+                    justify-self: center
+
+                .line__five
+                    grid-area: 1/3/2/4
+
+                .line__six
+                    grid-area: 2/2/3/3
+                    
                 
 
                 
