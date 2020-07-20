@@ -52,18 +52,18 @@
     cursor: pointer; }
 
 body {
-  display: grid;
-  grid-template-rows: 800px auto; }
+  display: grid; }
   body header {
     background-image: url(../img/header-bgheadbg-min.jpg);
     background-size: cover;
-    background-attachment: fixed; }
+    background-attachment: fixed;
+    height: 100vh; }
     body header .container {
       position: relative; }
       body header .container .header__content {
         display: grid;
         grid-template-rows: 175px 404px;
-        grid-row-gap: 10vh; }
+        grid-row-gap: 20%; }
         body header .container .header__content nav {
           display: grid;
           grid-template-columns: 41.4330218069% 11.6822429907% 41.4330218069%;
@@ -197,10 +197,13 @@ body {
             border-radius: 50px;
             width: 60px;
             height: 60px; }
-            body header .container .header__content .header__main .contain .down {
+            body header .container .header__content .header__main .contain a {
               justify-self: center;
               align-self: center;
-              font-size: 25px; }
+              text-decoration: none; }
+              body header .container .header__content .header__main .contain a .down {
+                font-size: 25px;
+                color: #ffffff; }
           body header .container .header__content .header__main .contain:hover {
             border: 1px solid rgba(255, 214, 0, 0.5);
             cursor: pointer; }
@@ -597,7 +600,8 @@ body {
         display: grid;
         grid-template-columns: repeat(4, 1fr); }
         body main .gallery .galerry__content img {
-          max-width: 100%; }
+          max-width: 100%;
+          width: 100%; }
     body main .contact {
       background-color: #ffffff;
       margin: 100px 0 100px 0; }
